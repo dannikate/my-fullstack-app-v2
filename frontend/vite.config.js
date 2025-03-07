@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-    base: '//',
+    base: '/my-fullstack-app-v2/',
     server: {
         proxy: {
             '/api': {
