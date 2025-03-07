@@ -28,7 +28,7 @@ setupCounter(document.querySelector('#counter'));
 getJsonMsg();
 
 function getJsonMsg() {
-  fetch('/api')
+  fetch(import.meta.env.VITE_API_URL)
   .then(response => {
     if (!response.ok) {
       document.getElementById('json-call').textContent = 'Unable to retrieve JSON response :/'
