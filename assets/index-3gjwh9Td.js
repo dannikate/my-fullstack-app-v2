@@ -16,4 +16,4 @@
     <div id="send-call"></div>
     <div id="json-call"></div>
   </div>
-`;a(document.querySelector("#counter"));d();function d(){fetch("/api").then(o=>{if(!o.ok)throw document.getElementById("json-call").textContent="Unable to retrieve JSON response :/",new Error("Unable to retrieve JSON response :/");return o.json()}).then(o=>{document.getElementById("json-call").innerHTML=`the JSON response from the backend: <span style="color:yellow; font-weight:bold;">${o.message}</span>`})}
+`;a(document.querySelector("#counter"));d();function d(){fetch("https://my-fullstack-app-v2.vercel.app/api").then(o=>{if(!o.ok)throw document.getElementById("json-call").textContent="Unable to retrieve JSON response :/",new Error("Unable to retrieve JSON response :/");return o.json()}).then(o=>{document.getElementById("json-call").innerHTML=`the JSON response from the backend: <span style="color:yellow; font-weight:bold;">${o.message}</span>`})}
