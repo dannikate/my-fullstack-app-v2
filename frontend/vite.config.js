@@ -5,7 +5,7 @@ export default defineConfig({
     server: {
         proxy: {
             '/api': {
-                target: 'http://localhost:3001/', // backend API server
+                target: 'https://my-fullstack-app-v2.vercel.app/', // backend API server
                 changeOrigin: true,
             },
         }
